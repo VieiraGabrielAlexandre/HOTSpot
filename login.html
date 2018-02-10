@@ -1,24 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<title>internet hotspot > login</title>
+<title>Conexão MIX</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="expires" content="-1" />
 <style type="text/css">
-body {color: #737373; font-size: 10px; font-family: verdana;}
+body {color: #0955D9; font-size: 12px; font-family: verdana;}
 
 textarea,input,select {
-background-color: #FDFBFB;
+background-color: #FFFCFC;
 border: 1px solid #BBBBBB;
 padding: 2px;
 margin: 1px;
-font-size: 14px;
-color: #808080;
+font-size: 12px;
+color: #0955f9;
 }
 
-a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 10px; }
+a, a:link, a:visited, a:active { color: #3A38EF; text-decoration: none; font-size: 16px; }
 a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
 img {border: none;}
 td { font-size: 14px; color: #7A7A7A; }
@@ -49,23 +48,22 @@ $(if chap-id)
 $(endif)
 
 <div align="center">
-	<a href="$(link-login-only)?target=lv&amp;dst=$(link-orig-esc)"><p>Conheça o mundo digital</p>
-	<p> de uma forma jamais vista !</p></a>
+	<a href="$(link-login-only)?target=lv&amp;dst=$(link-orig-esc)"><p>MIX TELECOM EXPERT/EXCELENT</p></a>
 </div>
 
-<table width="100%" style="margin-top: 10%;">
+<table width="100%" style="margin-top: 0%;">
 	<tr>
 	<td align="center" valign="middle">
-		<div class="notice" style="color: #c1c1c1; font-size: 9px">Conecte-se com a MIX TELECOM.<br />$(if trial == 'yes')Se não é cliente MIX , <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Clique aqui</a>.$(endif)</div><br />
-		<table width="280" height="280" style="border: 1px solid #cccccc; padding: 0px;" cellpadding="0" cellspacing="0">
+		<div class="notice" style="color: #0; font-size: 13px"><br />$(if trial == 'yes')Se não é cliente MIX , <a style="color: #283AFF" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Clique aqui</a>.$(endif)</div><br />
+		<table width="100" height="80" style="border: 1px solid #0#FFFFFF; padding: 0px;" cellpadding="0" cellspacing="0">
 			<tr>
-				<td align="center" valign="bottom" height="175" colspan="2">
+				<td align="center" valign="bottom" height="70" colspan="0">
 					<form name="login" action="$(link-login-only)" method="post"
 					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
 						<input type="hidden" name="dst" value="$(link-orig)" />
 						<input type="hidden" name="popup" value="true" />
 						
-							<table width="100" style="background-color: #ffffff">
+							<table width="100" style="background-color: #FFFFFF">
 								<tr><td align="right">Usuario</td>
 										<td><input style="width: 80px" name="username" type="text" value="$(username)"/></td>
 								</tr>
